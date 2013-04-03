@@ -14,6 +14,10 @@ void draw() {
   fill(110, 170, 120);
   rect(0, 310, width, height - 310);
   
+  // draw the mountain
+  fill(170,170,170);
+  triangle(30,310,200,310,116,100);
+  
   // draw a yellow car
   fill(150, 150, 150);
   ellipse(x + 30, 320, 90, 20);
