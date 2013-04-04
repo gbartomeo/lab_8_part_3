@@ -3,7 +3,7 @@ void setup() {
 
 }
 
-int x = 200, mountain_x = 0, mountain_speed = -1;
+int x = 200, mountain_x = 0, mountain_speed = -1, tree_x = -80, tree_speed = -2;
 
 void draw() {
   noStroke();
@@ -17,6 +17,12 @@ void draw() {
   // draw the mountain
   fill(170,170,170);
   triangle(30 + mountain_x,310,200 + mountain_x,310,116 + mountain_x,100);
+  
+  // draw a tree
+  fill(77,48,48);
+  rect(530 + tree_x,270,20,40);
+  fill(2,193,32);
+  triangle(500 + tree_x, 270, 580 + tree_x, 270, 540 + tree_x, 200);
   
   // draw a yellow car
   fill(150, 150, 150);
