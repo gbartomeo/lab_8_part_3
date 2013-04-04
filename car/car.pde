@@ -3,7 +3,7 @@ void setup() {
 
 }
 
-int x = 200, mountain_x = 0, mountain_speed = -1, tree_x = -80, tree_speed = -2;
+int x = 200, mountain_x = 0, mountain_speed = -1, tree_x = -80, tree_speed = -3;
 
 void draw() {
   noStroke();
@@ -41,6 +41,7 @@ void draw() {
   ellipse(x + 60, 320, 20, 20);
 
   mountain_x += mountain_speed;
+  tree_x += tree_speed;
 
   // a comment
 }
